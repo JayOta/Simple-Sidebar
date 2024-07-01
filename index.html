@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Sidebar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <button id="openSidebarBtn" onclick="openSidebar()"><img src="./img/menu-line.png"></button>
+        <div id="sidebar" class="sidebar">
+            <button id="closeSidebarBtn" onclick="closeSidebar()"><img src="./img/close-fill.png"></button>
+            <div class="line">
+                <button class="links"><img class="p-img"  src="./img/dashboard-fill.png" alt="">Painel</button>
+            </div>
+            <div class="line">
+                <button class="links"><img class="p-img" src="./img/group-line.png">Clientes</button>
+            </div>
+            <div class="line">
+                <button class="links"><img class="p-img" src="./img/shopping-cart-fill.png" alt="">Produtos</button>
+            </div>
+            <div class="line">
+                <button class="links"><img class="p-img"  src="./img/bar-chart-fill.png" alt="">Estatísticas</button>
+            </div>
+            <hr>
+            <div class="line">
+                <button class="links"><img class="p-img"  src="./img/notification-2-fill.png" alt="">Notificações</button>
+            </div>
+            <div class="line">
+                <button class="links"><img class="p-img"  src="./img/file-3-fill.png" alt="">Documentos</button>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
