@@ -5,32 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Simple Sidebar</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <button id="openSidebarBtn" onclick="openSidebar()"><img src="./img/menu-line.png"></button>
-        <div id="sidebar" class="sidebar">
-            <button id="closeSidebarBtn" onclick="closeSidebar()"><img src="./img/close-fill.png"></button>
-            <div class="line">
-                <button class="links"><img class="p-img"  src="./img/dashboard-fill.png">Painel</button>
+    <button id="openSidebarBtn" onclick="openSidebar()" style="display:none;"><i class='bx bx-menu up'></i></button>
+            <div id="sidebar" class="sidebar">
+                <button id="closeSidebarBtn" onclick="closeSidebar()"><i class='bx bx-x up'></i></button>
+                <div class="line">
+                    <button class="links"><i class='bx bxs-dashboard'></i>Painel</button>
+                </div>
+                <div class="line">
+                    <button class="links"><i class='bx bx-user' ></i>Clientes</button>
+                </div>
+                <div class="line">
+                    <button class="links"><i class='bx bx-cart'></i>Produtos</button>
+                </div>
+                <div class="line">
+                    <button class="links"><i class='bx bx-bar-chart-alt-2'></i>Estatísticas</button>
+                </div>
+                <hr>
+                <div class="line">
+                    <button class="links"><i class='bx bx-bell'></i>Notificações</button>
+                </div>
+                <div class="line">
+                    <button class="links"><i class='bx bx-file-blank'></i>Documentos</button>
+                </div>
             </div>
-            <div class="line">
-                <button class="links"><img class="p-img" src="./img/group-line.png">Clientes</button>
-            </div>
-            <div class="line">
-                <button class="links"><img class="p-img" src="./img/shopping-cart-fill.png">Produtos</button>
-            </div>
-            <div class="line">
-                <button class="links"><img class="p-img"  src="./img/bar-chart-fill.png">Estatísticas</button>
-            </div>
-            <hr>
-            <div class="line">
-                <button class="links"><img class="p-img"  src="./img/notification-2-fill.png">Notificações</button>
-            </div>
-            <div class="line">
-                <button class="links"><img class="p-img"  src="./img/file-3-fill.png">Documentos</button>
-            </div>
-        </div>
         <script src="script.js"></script>
 </body>
 </html>
